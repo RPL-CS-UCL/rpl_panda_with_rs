@@ -18,5 +18,5 @@ To run:
 catkin build -j 1
 source devel/setup.bash
 roslaunch rpl_panda_with_rs display.launch
-
+roslaunch realsense_gazebo_plugin depth_proc.launch
 ```
