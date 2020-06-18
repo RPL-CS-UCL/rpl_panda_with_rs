@@ -14,8 +14,9 @@ git clone https://github.com/rpl-as-ucl/panda_simulator.git
 
 To run:
 
-`
+```
 catkin build -j 1
 source devel/setup.bash
 roslaunch rpl_panda_with_rs display.launch
-`
+
+```
