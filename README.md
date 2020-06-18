@@ -3,13 +3,13 @@ RPL Panda with RealSense
 
 Clone the repository and its dependencies:
 
-`
+```
 git clone https://github.com/rpl-as-ucl/rpl_panda_with_rs.git
 git clone https://github.com/rpl-as-ucl/realsense_gazebo_plugin.git
 git clone https://github.com/rpl-as-ucl/franka_ros.git
 git clone https://github.com/rpl-as-ucl/panda_moveit_config.git
 git clone https://github.com/rpl-as-ucl/panda_simulator.git
-`
+```
 
 
 To run:
