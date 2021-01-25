@@ -569,7 +569,7 @@
   <joint name="realsense_joint" type="fixed">
     <parent link="panda_link8"/>
     <child link="rs200_camera"/>
-    <origin rpy="0 -1.57079632679 -0.785398163397" xyz="0.03 -0.03 0.05"/>
+    <origin rpy="0 -1.57079632679 2.3561944901" xyz="0.03 -0.03 0.05"/>
   </joint>
   <!-- Virtual links representing the cameras positons and orientations-->
   <link name="color"/>
