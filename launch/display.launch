@@ -1,7 +1,10 @@
 <launch>
+    <include file="$(find realsense_gazebo_plugin)/launch/msg_proc.launch">
+    	<arg name="camera_name" value="r200"/>
+    </include>
+
     <!-- GAZEBO arguments -->
     <arg name="load_gripper" default="true" />
-	<arg name="robot_urdf"       default="$(find rpl_panda_with_rs)/urdf/panda_with_rs.urdf"/>
 	<arg name="robot_urdf_xacro" default="$(find rpl_panda_with_rs)/urdf/panda_with_rs.xacro"/>
 	<arg name="robot_srdf_xacro" default="$(find rpl_panda_with_rs)/srdf/panda_with_rs.srdf.xacro"/>
 	<!-- The name of the parameter under which the URDF is loaded -->
@@ -13,12 +16,8 @@
 	Load descriptions
 	-->
 	<param
-	    name="robot_xacro_description"
+	    name="robot_description"
 	    command="$(find xacro)/xacro '$(arg robot_urdf_xacro)'"
-	/>
-	<param 
-		name="robot_description" 
-		command="$(find xacro)/xacro --inorder $(arg robot_urdf)" 
 	/>
 
 	<!--
@@ -30,7 +29,7 @@
 	    name="spawn_model"
 	    pkg="gazebo_ros"
 	    type="spawn_model"
-	    args="-urdf -param robot_xacro_description -model panda"
+	    args="-urdf -param robot_description -model panda"
 	/>
 	<node name="state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" output="screen" />
