@@ -16,5 +16,14 @@ To run Panda with RealSense in Gazebo and Rviz:
 catkin build -j 1
 source devel/setup.bash
 roslaunch rpl_panda_with_rs display.launch
-roslaunch realsense_gazebo_plugin depth_proc.launch
 ```
+
+Known dependencies:
+
+```
+moveit
+image_proc
+depth_image_proc
+```
+
+Alternatively, installing ROS packages through [this guide](https://github.com/RPL-CS-UCL/scripts) should be sufficient.
