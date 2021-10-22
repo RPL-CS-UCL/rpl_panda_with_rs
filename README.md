@@ -4,6 +4,7 @@ RPL Panda with the RealSense sensor attached
 Clone the repository and its dependencies:
 ```
 mkdir -p ws_rpl/src && cd ws_rpl/src
+sudo apt install ros-melodic-franka-ros ros-melodic-libfranka
 git clone https://github.com/RPL-CS-UCL/rpl_panda_with_rs.git
 git clone https://github.com/RPL-CS-UCL/realsense_gazebo_plugin.git
 git clone https://github.com/RPL-CS-UCL/franka_ros.git
