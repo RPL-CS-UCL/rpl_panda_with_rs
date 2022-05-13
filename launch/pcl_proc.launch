@@ -1,0 +1,12 @@
+<!-- <launch>
+  <arg name="pcd_topic_in" value="$(arg camera_name)"/>
+  <arg name="pcd_topic_out" value="$(arg camera_name)"/>
+  
+
+
+  <node pkg="rpl_panda_with_rs" type="pcl_node" 
+        name="panda_pcl_node" output="screen">
+    <arg name="pcd_topic_in" value="$(arg camera_name)"/>
+    <arg name="pcd_topic_out" value="$(arg camera_name)"/>
+  </node>
+</launch> -->
